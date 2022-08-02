@@ -1,9 +1,34 @@
+from abc import ABC, abstractmethod
 from app.adressbook import main as ab_main
 from app.cleanfolder import main as clean_main
 from app.notebook import main as note_book
 
+"""
+Abstract base class for user outputs
+"""
 
-# main функція проекту
+class AbstractOutput(ABC):
+    @abstractmethod
+    def output(self):
+        pass
+
+
+class MainOutput(AbstractOutput):
+    def output(self):
+        pass
+
+
+class AddressBookOutput(AbstractOutput):
+    def output(self):
+        pass
+
+
+class NoteBookOutput(AbstractOutput):
+    def output(self):
+        pass
+
+
+# main function of the project
 def main():
     while True:
         print('Menu:',

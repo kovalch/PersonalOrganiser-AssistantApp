@@ -3,7 +3,7 @@ import pickle
 from collections import UserDict
 from datetime import date
 import re
-import phonenumbers
+#import phonenumbers
 
 
 class Field:
